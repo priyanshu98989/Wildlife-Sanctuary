@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f5;
+  color: #333;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.sanctuaries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  margin: 15px 10px 10px;
+  color: #2e7d32;
+}
+
+.card p {
+  font-size: 0.95em;
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+/* ✅ Added class for styling the "aab" text */
+.highlight-text {
+  border: 2px solid #2e7d32;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 8px 12px;
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}

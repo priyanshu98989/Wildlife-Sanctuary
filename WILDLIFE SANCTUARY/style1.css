@@ -1,0 +1,62 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+.gallery p {
+  background-color: #ffffffcc;
+  padding: 15px;
+  border-left: 5px solid #2e7d32;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body > p:last-child {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  color: #005f73;
+}
